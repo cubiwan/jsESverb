@@ -1,6 +1,8 @@
 # jsESverb
 Library to conjugate verbs in spanish
 
+To do that library I have use code from [https://github.com/voldmar/conjugation](https://github.com/voldmar/conjugation)
+
 ## Load
 
 ```html
