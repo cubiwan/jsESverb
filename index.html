@@ -1,0 +1,41 @@
+<html>
+<head>
+<script src="jsESverbsIrregular.js" charset="UTF-8"></script>
+<script src="jsESverbList.js" charset="UTF-8"></script>
+<script src="jsESverb.js" charset="UTF-8"></script>
+
+<script>
+var verb = new jsESverb();
+
+function conjugate(){
+  var word = document.getElementById('word').value;
+  var result = verb.conjugate(word);
+  console.log(result);
+
+  var text = document.getElementById('text');
+  text.value = JSON.stringify(result, undefined, 4);
+}
+
+function isVerb(){
+  var word = document.getElementById('word').value;
+  var result = verb.isVerb(word, true);
+  console.log(result);
+
+  var text = document.getElementById('text');
+  text.value = JSON.stringify(result, undefined, 4);
+}
+
+</script>
+</head>
+<body>
+<h1>jsESverb</h1>
+Verb: <input id="word">
+<br>
+<br>
+<button onclick="conjugate()">Conjugate (only infinitives)</button>
+<button onclick="isVerb()">Is verb?</button>
+<br><br><br>
+<textarea id="text" rows="40" cols="100"></textarea>
+
+</body>
+</html>
