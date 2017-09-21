@@ -33,6 +33,7 @@ _word_: verb in infinitive
 stemText(word, showFalses);
 ```
 Return array of posibles form of the verb, each array have 4 items:
+
 0. conjugation (ar,er,ir)
 1. tense
 2. infinitive
