@@ -25,7 +25,7 @@ var result2 = verb.isVerb(word);
 ```js
 conjugate(word);
 ```
-Return lla conjugations of verb
+Return all forms of one verb
 
 _word_: verb in infinitive
 
